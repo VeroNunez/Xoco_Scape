@@ -15,19 +15,19 @@ public class MovimientoXoco : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0, 0, 5 * Time.deltaTime);
+            transform.Translate(0, 0, -5 * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(0, 0, -5 * Time.deltaTime);
+            transform.Translate(0, 0, 5 * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-5 * Time.deltaTime, 0, 0);
+            transform.Rotate(0, -40 * Time.deltaTime, 0);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(5 * Time.deltaTime, 0, 0);
+            transform.Rotate( 0, 40 * Time.deltaTime, 0);
         }
     }
 }

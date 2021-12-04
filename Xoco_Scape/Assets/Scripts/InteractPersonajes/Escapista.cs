@@ -5,7 +5,8 @@ using UnityEngine;
 public class Escapista : MonoBehaviour
 {
     public bool isOpen;
-
+    public GameObject dialogo;
+    public GameObject dialogofinal;
     public GameObject Player;
 
     //public GameObject diálogo;    **poner el start en apagado
@@ -21,9 +22,15 @@ public class Escapista : MonoBehaviour
             if (Player.GetComponent<PlayerManager>().pasador == 1)
             {
                 //Aqui va diálogo FIN
+                dialogofinal.GetComponent<ControlDialogos>().popDialogo();
+
+            }
+            else { 
+            //Aqui va el diálogo
+            dialogo.GetComponent<ControlDialogos>().popDialogo();
             }
 
-            //Aqui va el diálogo
+
 
             Debug.Log("Hablaste con Escapista");
         }
