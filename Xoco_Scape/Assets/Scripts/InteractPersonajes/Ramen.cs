@@ -7,6 +7,7 @@ public class Ramen : MonoBehaviour
     public bool isOpen;
 
     public GameObject Player;
+    public GameObject dialogofinalR;
 
     //public GameObject diálogo;    **poner el start en apagado
 
@@ -19,6 +20,7 @@ public class Ramen : MonoBehaviour
             Player.GetComponent<PlayerManager>().carta = 1;
 
             //Aqui va el diálogo
+            dialogofinalR.GetComponent<ControlDialogoObj>().popDialogoObj();
 
             Debug.Log("Hablaste con Ramen");
         }

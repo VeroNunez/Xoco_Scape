@@ -562,7 +562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogo: {fileID: 4362878263060818810}
   txtDialogo: {fileID: 4362878263610672622}
-  teclaSiguienteFrase: 323
+  teclaSiguienteFrase: 102
   dialogoEnsayo:
   - texto: Hola
   - texto: Tengo nuevo Roomie

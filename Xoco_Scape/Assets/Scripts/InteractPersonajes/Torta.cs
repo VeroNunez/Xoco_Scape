@@ -7,6 +7,8 @@ public class Torta : MonoBehaviour
     public bool isOpen;
 
     public GameObject Player;
+    public GameObject dialogoT;
+    public GameObject dialogofinalT;
     public void HablarTorta()
     {
         if (!isOpen)
@@ -20,11 +22,13 @@ public class Torta : MonoBehaviour
                 Player.GetComponent<PlayerManager>().cepillo = 0;
 
                 //Aqui va diálogo GRACIAS 
+                dialogofinalT.GetComponent<ControlDialogoObj>().popDialogoObj();
 
             }
             else
             {
                 //Aqui va diálogo qué necesita
+                dialogoT.GetComponent<ControlDialogos>().popDialogo();
             }
             Debug.Log("Hablaste con Torta");
         }

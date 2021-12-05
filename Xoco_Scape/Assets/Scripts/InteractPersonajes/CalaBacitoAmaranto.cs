@@ -7,6 +7,8 @@ public class CalaBacitoAmaranto : MonoBehaviour
     public bool isOpen;
 
     public GameObject Player;
+    public GameObject dialogoCa;
+    public GameObject dialogofinalCa;
 
     //public GameObject diálogo;    **poner el start en apagado
     //public GameObject diálogoGracias;    **poner el start en apagado
@@ -22,11 +24,13 @@ public class CalaBacitoAmaranto : MonoBehaviour
             {
                 Player.GetComponent<PlayerManager>().cepillo = 1;
                 Player.GetComponent<PlayerManager>().bufanda = 0;
-                //Aqui va diálogo GRACIAS 
+                //Aqui va diálogo GRACIAS
+                dialogofinalCa.GetComponent<ControlDialogoObj>().popDialogoObj();
             }
             else
             {
                 //Aqui va diálogo qué necesita
+                dialogoCa.GetComponent<ControlDialogos>().popDialogo();
             }
 
             Debug.Log("Hablaste con calabacito y amaranto");

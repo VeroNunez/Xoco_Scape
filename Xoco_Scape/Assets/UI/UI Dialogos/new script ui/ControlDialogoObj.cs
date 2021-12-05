@@ -9,7 +9,7 @@ public class ControlDialogoObj : MonoBehaviour
     public Text txtDialogoObj;
     [Header("Config de teclado")]
     public KeyCode teclaSiguienteFrase2;
-    public KeyCode teclaSiguienteFrase1;
+    //public KeyCode teclaSiguienteFrase1;
     [Header("Ensayos")]
     public FraseObj[] dialogoEnsayoObj;
     public bool objAct;
@@ -49,17 +49,10 @@ public class ControlDialogoObj : MonoBehaviour
     public void popDialogoObj()
     {
         StartCoroutine(DecirObj(dialogoEnsayoObj));
-        
+
+       
 
 
-        if (Input.GetKeyDown(teclaSiguienteFrase2))
-        {
-            if (objAct == true)
-            {
-                dialogoObj.GetComponent<Animator>().SetBool("Objeto", true);
-            }
-
-        }
     }
 
     void Update()

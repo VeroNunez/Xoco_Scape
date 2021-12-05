@@ -718,8 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogoObj: {fileID: 5308460477435782681}
   txtDialogoObj: {fileID: 5308460476524201383}
-  teclaSiguienteFrase2: 323
-  teclaSiguienteFrase1: 323
+  teclaSiguienteFrase2: 102
   dialogoEnsayoObj:
   - textoObj: Hola
   - textoObj: Chuchin
