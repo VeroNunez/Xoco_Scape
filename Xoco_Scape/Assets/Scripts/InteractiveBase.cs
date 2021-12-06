@@ -12,9 +12,12 @@ public class InteractiveBase : MonoBehaviour
     public UnityEvent interactAction;
     public UnityEvent dejaDeHablar;
 
+    public GameObject interactuar;
+
     private void Start()
     {
         //mipanel.SetActive(false);
+        interactuar.SetActive(false);
     }
     private void Update()
     {
@@ -39,6 +42,8 @@ public class InteractiveBase : MonoBehaviour
             isInRange = true;
             Debug.Log("jugador en rango");
             //mipanel.SetActive(true);
+            interactuar.SetActive(true);
+
         }
     }
 
@@ -49,6 +54,7 @@ public class InteractiveBase : MonoBehaviour
             isInRange = false;
             Debug.Log("jugador fuera de rango");
             //mipanel.SetActive(false);
+            interactuar.SetActive(false);
 
         }
     }

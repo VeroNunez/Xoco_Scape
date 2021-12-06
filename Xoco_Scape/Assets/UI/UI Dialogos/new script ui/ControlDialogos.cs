@@ -11,7 +11,8 @@ public class ControlDialogos : MonoBehaviour
     public KeyCode teclaSiguienteFrase;
     [Header("Ensayos")]
     public Frase[] dialogoEnsayo;
-    
+
+    public GameObject Player;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class ControlDialogos : MonoBehaviour
     public IEnumerator Decir(Frase[] _dialogo)
     {
         dialogo.GetComponent<Animator>().SetBool("Cartel", true);
+
         for (int i = 0; i < _dialogo.Length; i++)
         {
             txtDialogo.text = _dialogo[i].texto;

@@ -18,6 +18,7 @@ public class Escapista : MonoBehaviour
         {
             isOpen = true;           
             Player.GetComponent<PlayerManager>().TareaPasador = 1;
+            //
 
             if (Player.GetComponent<PlayerManager>().pasador == 1)
             {
@@ -30,7 +31,7 @@ public class Escapista : MonoBehaviour
             dialogo.GetComponent<ControlDialogos>().popDialogo();
             }
 
-
+            Player.GetComponent<MovimientoXoco>().enabled = true;
 
             Debug.Log("Hablaste con Escapista");
         }
@@ -39,6 +40,7 @@ public class Escapista : MonoBehaviour
     public void DejarDeHablar()
     {
         isOpen = false;
+        
         //Desactivar diálogos
     }
 }
