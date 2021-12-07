@@ -8,6 +8,7 @@ public class Escapista : MonoBehaviour
     public GameObject dialogo;
     public GameObject dialogofinal;
     public GameObject Player;
+    bool desactivar;
 
     //public GameObject diálogo;    **poner el start en apagado
     //public GameObject diálogoGracias;    **poner el start en apagado
@@ -40,6 +41,7 @@ public class Escapista : MonoBehaviour
     public void DejarDeHablar()
     {
         isOpen = false;
+
         
         //Desactivar diálogos
     }

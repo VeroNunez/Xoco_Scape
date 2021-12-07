@@ -8,6 +8,7 @@ public class Ramen : MonoBehaviour
 
     public GameObject Player;
     public GameObject dialogofinalR;
+    
 
     //public GameObject diálogo;    **poner el start en apagado
 
@@ -29,5 +30,6 @@ public class Ramen : MonoBehaviour
     public void DejarDeHablar()
     {
         isOpen = false;
+
     }
 }

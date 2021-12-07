@@ -35,6 +35,10 @@ public class PlayerManager : MonoBehaviour
     public GameObject objPasador;
     public GameObject objPasador2;
 
+    //bloqueos de pecera
+    public GameObject plano1;
+    public GameObject plano2;
+
 
 
     // Start is called before the first frame update
@@ -109,6 +113,15 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
+    void desbloqueo()
+    {
+        if(TareaPasador == 1)
+        {
+            plano1.SetActive(false);
+            plano2.SetActive(false);
+        }
+        
+    }
 
     void Start()
     {
@@ -134,5 +147,6 @@ public class PlayerManager : MonoBehaviour
     {
         ActiveTareas();
         ActiveObj();
+        desbloqueo();
     }
 }
